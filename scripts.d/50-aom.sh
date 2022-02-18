@@ -4,7 +4,8 @@ AOM_REPO="https://aomedia.googlesource.com/aom"
 AOM_COMMIT="f4360277b5ddcd192696780178db440ac2922319"
 
 ffbuild_enabled() {
-    return 0
+    return -1;
+    #return 0
 }
 
 ffbuild_dockerstage() {

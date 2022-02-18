@@ -4,8 +4,9 @@ SVTAV1_REPO="https://gitlab.com/AOMediaCodec/SVT-AV1.git"
 SVTAV1_COMMIT="fdf4f36867bba068e221965d12c5975c509845da"
 
 ffbuild_enabled() {
-    [[ $TARGET == win32 ]] && return -1
-    return 0
+    return -1;
+    #[[ $TARGET == win32 ]] && return -1
+    #return 0
 }
 
 ffbuild_dockerbuild() {

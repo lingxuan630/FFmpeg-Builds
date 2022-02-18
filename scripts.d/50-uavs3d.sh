@@ -4,8 +4,9 @@ UAVS3D_REPO="https://github.com/uavs3/uavs3d.git"
 UAVS3D_COMMIT="23a42eefbcde8f4d826b71f2e158f948f3e2b3ee"
 
 ffbuild_enabled() {
-    [[ $TARGET == win32 ]] && return -1
-    return 0
+    return -1;
+    #[[ $TARGET == win32 ]] && return -1
+    #return 0
 }
 
 ffbuild_dockerbuild() {
